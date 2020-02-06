@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: yomomoto
+    password: 983830366Mom77
+    driver-class-name: org.postgresql.Driver
+    platform: postgres
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+      dialect: postgres
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
